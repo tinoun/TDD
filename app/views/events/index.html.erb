@@ -1,0 +1,17 @@
+<div class="container">
+
+	<h1 class="row">Tous les Evenements</h1>
+
+	<p>
+		<% @event.each do |e| %>
+			<div class="col-lg-3">
+				<%= e.description %><br>
+				<%= e.place %><br>
+				<%= e.date %><br>
+				<%= e.creator_id %><br>
+				<a href="/events/<%= e.id %>">En savoir plus</a>
+			</div>
+		<% end %>
+	</p>
+
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+
+	<h1 class="row">Tous les membres du club</h1>
+
+	<p>
+		<% @users.each do |e| %>
+			<div class="col-lg-3">
+				ID: 
+				<%= e.id %><br>
+				Pseudo: 
+				<%= e.name %><br>
+			</div>
+		<% end %>
+	</p>
+
+</div>
